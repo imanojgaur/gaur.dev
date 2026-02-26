@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Manoj",
+  lastName: "Gaur",
+  name: `Manoj Gaur`,
+  role: "Full Stack Web.Dev",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "manojgaur6397@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,13 +25,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/imanojgaur",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/imanojgaur/",
     essential: true,
   },
   {
@@ -41,9 +41,9 @@ const social: Social = [
     essential: false,
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "x",
+    icon: "twitter",
+    link: "https://x.com/TManojGaur",
     essential: true,
   },
   {
@@ -102,34 +102,33 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Manoj is a Full-Stack Software Engineer with a passion for transforming complex business requirements into fast, secure, and scalable web applications. His work spans modern frontend architectures, robust relational databases, and the seamless integration of secure user authentication.
       </>
     ),
-  },
+  },  
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Featured Projects",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Plant E-commerce SaaS & Admin Dashboard",
+        timeframe: "26 Feb  - Present",
+        role: "Creator & Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Architecting a full-stack platform featuring a B2C storefront and a B2B role-based admin dashboard.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Engineering a robust relational database using PostgreSQL & Prisma to manage users, products, and multi-tier services (Delivery, Installation, Maintenance).
           </>,
+          <>
+          Implementing NextAuth/JWT for secure authentication and Zustand for complex global state management (cart and checkout logic).
+          </>
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/cover-01.png",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -137,20 +136,25 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Financial Dashboard Application",
+        timeframe: "feb 2026",
+        role: "Next.js Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+         Developed a full-stack web application based on the official Next.js fundamentals course.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+           Integrated Server-Side Rendering (SSR) and Next.js Server Actions to optimize data fetching and reduce load times ,and manage component state using React Hooks.
           </>,
         ],
-        images: [],
+        images: [
+            {
+            src: "/images/projects/project-01/cover-01-01.png",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -159,78 +163,81 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "L.D.A.H REC,   MAINPURI (AKTU)",
+        description: <>Studied Computer Science & Engineering.</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      // {
+      //   name: "Build the Future",
+      //   description: <>Studied online marketing and personal branding.</>,
+      // },
     ],
   },
-  technical: {
+technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend Architecture",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Building high-performance, SEO-optimized web apps using Next.js (App Router), React.js, and Tailwind CSS.</>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
           {
             name: "Next.js",
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "React",
+            icon: "react", // template mostly supports standard icons
           },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "JavaScript",
+            icon: "javascript",
           },
         ],
+        images: [], // Images khali chhod de, clean lagega
+      },
+      {
+        title: "Backend & Databases",
+        description: (
+          <>Designing robust APIs and complex relational data models using PostgreSQL, Prisma ORM, and Express.js.</>
+        ),
+        tags: [
+          {
+            name: "PostgreSQL",
+            icon: "postgresql", // safe icon name
+          },
+          {
+            name: "Prisma",
+            icon: "prisma", 
+          },
+          {
+            name: "Node.js",
+            icon: "nodejs",
+          },
+        ],
+        images: [],
+      },
+      {
+        title: "Security & State Management",
+        description: (
+          <>Managing complex global application logic with Zustand, and implementing secure user sessions with NextAuth & OAuth 2.0.</>
+        ),
+        tags: [
+          {
+            name: "NextAuth.js",
+            icon: "security", 
+          },
+          {
+            name: "Zustand",
+            icon: "zustand",
+          },
+        ],
+        images: [],
       },
     ],
   },
-};
+}
 
 const blog: Blog = {
   path: "/blog",
