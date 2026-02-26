@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { GiBearFace } from "react-icons/gi";
 
 import {
   HiArrowUpRight,
@@ -27,6 +28,11 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiReact,       
+  SiPrisma,        
+  SiPostgresql,    
+  SiNodedotjs,    
+  SiTypescript
 } from "react-icons/si";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
@@ -64,6 +70,12 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  react: SiReact,
+  prisma: SiPrisma,
+  postgresql: SiPostgresql,
+  nodejs: SiNodedotjs,
+  typescript: SiTypescript,
+  zustand: GiBearFace,
 };
 
 export type IconLibrary = typeof iconLibrary;
