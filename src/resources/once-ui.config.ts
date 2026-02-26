@@ -20,8 +20,8 @@ const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
-  "/gallery": true,
+  "/blog": false,
+  "/gallery": false,
 };
 
 const display: DisplayConfig = {
@@ -194,10 +194,13 @@ const schema: SchemaConfig = {
 };
 
 // social links
+// social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "",
+  linkedin: "https://www.linkedin.com/in/imanojgaur/",
+  discord: "",
+  twitter: "https://x.com/TManojGaur",
+  github: "https://github.com/imanojgaur",
 };
 
 // social sharing configuration for blog posts
