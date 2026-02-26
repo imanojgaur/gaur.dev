@@ -1,0 +1,39 @@
+---
+title: "Next.js App Router Fundamentals (Dashboard)"
+publishedAt: "2026-02-26"
+summary: "A full-stack financial dashboard built to master the core concepts of the Next.js App Router, including Server Actions and React Server Components."
+images:
+  - "/images/projects/project-01/cover-01-01.png"
+  - "/images/projects/project-01/cover-03.png"
+  - "/images/projects/project-01/cover-04.png"
+  - "/images/projects/project-01/cover-05.png"
+  - "/images/projects/project-01/cover-06.png"
+team:
+  - name: "Manoj Gaur"
+    role: "Full-Stack Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/imanojgaur/"
+link: "https://learning-nextjs-weld-one.vercel.app/"
+---
+
+## Overview
+
+I built this invoice management dashboard as part of my deep dive into the modern Next.js ecosystem. Instead of just reading the documentation, I built this to practically understand how the App Router shifts web development from the client to the server. It serves as my foundation for building more complex, custom applications.
+
+## Key Features
+
+- **Server-Side Data Fetching**: Utilized React Server Components (RSC) to fetch data directly from a PostgreSQL database, eliminating client-side loading spinners.
+- **Server Actions**: Implemented Next.js Server Actions to securely mutate data (create, update, delete invoices) without writing separate API routes.
+- **Authentication**: Added basic user login and session management using NextAuth.js to protect the dashboard routes.
+- **Streaming & Suspense**: Used React Suspense to stream UI components progressively, preventing slow database queries from blocking the entire page load.
+
+## Technologies Used
+
+- **Framework**: Next.js (App Router)
+- **Database**: PostgreSQL
+- **Styling**: Tailwind CSS
+- **Authentication**: NextAuth.js
+
+## Learnings
+
+This project cleared my core fundamentals. It taught me the exact difference between Server and Client boundaries, how to prevent database request waterfalls, and how to safely execute SQL queries on the server. It gave me the confidence to architect my own custom e-commerce platform from scratch.

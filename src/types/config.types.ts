@@ -145,6 +145,8 @@ export type SameAsConfig = {
   threads: string;
   linkedin: string;
   discord: string;
+  twitter: string;
+  github: string;
 };
 
 /**
