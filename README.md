@@ -8,4 +8,4 @@ Personal portfolio website showcasing my projects, skills, and experience as a F
 * **Language:** TypeScript
 * **Deployment:** Vercel
 
-🌐 **Live URL:** 
+🌐 **Live URL:** https://gaur-dev.vercel.app/
